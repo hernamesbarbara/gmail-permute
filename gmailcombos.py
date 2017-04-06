@@ -13,7 +13,7 @@ def get_combos(gmail_addr, sep="."):
     for i, letter in enumerate(letters):
         if i == 0 or i == len(letters):
             continue
-        perm = "".join(letters[:i])+"."+"".join(letters[i:])
+        perm = "".join(letters[:i])+sep+"".join(letters[i:])
         combos.append(perm+"@gmail.com")
     return combos
 
